@@ -9,7 +9,7 @@ import useInterval from 'hooks/useInterval';
 import useTranslation from './hooks/useTranslation';
 
 const Home = () => {
-    const [numberOfSeconds, setNumberOfSeconds] = useState(0);
+    const [numberOfSeconds, setNumberOfSeconds] = useState<number>(0);
 
     const { CLICK_ME, HELLO, TIME_SPENT } = useTranslation();
 
@@ -27,7 +27,7 @@ const Home = () => {
 
             <Button onClick={handleClick} text={CLICK_ME} />
 
-            <p>{TIME_SPENT.replace('{numberOfSeconds}', numberOfSeconds)}</p>
+            <p>{TIME_SPENT.replace('{{numberOfSeconds}}', String(numberOfSeconds))}</p>
         </ContentContainer>
     );
 };
