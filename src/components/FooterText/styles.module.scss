@@ -1,0 +1,9 @@
+@use 'styles/colors.scss' as *;
+@use 'styles/fonts.scss' as *;
+
+.footerText {
+    @include smallerFont;
+
+    color: $footerTextColor;
+    padding: 20px 0;
+}

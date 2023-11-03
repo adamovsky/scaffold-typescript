@@ -1,0 +1,16 @@
+@use 'styles/global.scss';
+
+.content {
+    align-self: flex-start;
+}
+
+.mainLayout {
+    align-items: center;
+    display: grid;
+    grid:
+        'header' min-content
+        'content' auto
+        'footer' min-content
+        / auto;
+    height: 100%;
+}

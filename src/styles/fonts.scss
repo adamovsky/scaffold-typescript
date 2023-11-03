@@ -1,0 +1,13 @@
+@use './mixins/breakpoints.scss';
+
+$arial: Arial;
+
+@mixin biggestFont {
+    font-family: $arial;
+    font-size: 22px;
+}
+
+@mixin smallerFont {
+    font-family: $arial;
+    font-size: 14px;
+}

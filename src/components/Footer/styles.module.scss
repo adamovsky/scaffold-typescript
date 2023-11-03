@@ -1,0 +1,7 @@
+@use 'styles/colors.scss' as *;
+
+.footer {
+    background-color: $footerBackgroundColor;
+    color: $inverseTextColor;
+    width: 100%;
+}

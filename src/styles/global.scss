@@ -1,0 +1,51 @@
+@use './colors.scss';
+@use './fonts.scss';
+@use './mixins/breakpoints.scss';
+@use './mixins/lineclamp.scss';
+@use './mixins/order.scss';
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: colors.$backgroundColor;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    font-stretch: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body,
+html {
+    height: 100%;
+}
+
+button {
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+:global(#root) {
+    height: 100%;
+}
