@@ -7,8 +7,8 @@ import React, {
     useState
 } from 'react';
 
-import isFunction from '@@utils/isFunction';
-import { DropdownMenu } from '@rantizo-software/rantizo-ui';
+import isFunction from 'utilities/isFunction';
+import DropdownMenu from 'components/DropdownMenu';
 
 import InputWithLabel from 'components/InputWithLabel';
 import DropdownItem from 'components/form/DropdownItem';

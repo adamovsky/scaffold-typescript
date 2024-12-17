@@ -1,3 +1,3 @@
 export interface IsFunction {
-    (fn: Function): boolean;
+    (fn: unknown): boolean;
 }
