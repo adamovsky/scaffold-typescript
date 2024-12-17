@@ -1,0 +1,30 @@
+@use 'styles/colors.scss' as *;
+@use 'styles/functions/rem' as *;
+@use 'styles/mixins/form.scss' as *;
+@use 'styles/mixins/fonts' as *;
+
+.hide {
+    display: none;
+}
+
+.input {
+    @include formElement;
+
+    &::placeholder {
+        color: $inputPlaceholderColor;
+    }
+
+    &.hasError {
+        border-color: $errorBorderColor;
+
+        &::placeholder {
+            @include normalSemiboldFont;
+
+            color: $errorTextColor;
+        }
+    }
+}
+
+.viewOnly {
+    @include viewOnlyFormElement;
+}

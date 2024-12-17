@@ -1,0 +1,12 @@
+@use 'styles/colors.scss' as *;
+@use 'styles/functions/rem' as *;
+
+.dropdownItem {
+    border-radius: rem(8px);
+    padding: rem(15px);
+
+    &:hover {
+        background-color: $dropdownHoverBackgroundColor;
+        cursor: pointer;
+    }
+}

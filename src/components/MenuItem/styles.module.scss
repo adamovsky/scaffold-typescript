@@ -1,0 +1,26 @@
+@use 'styles/colors' as *;
+@use 'styles/functions/rem' as *;
+@use 'styles/mixins/fonts' as *;
+
+.menuItem {
+    @include normalFont;
+
+    background-color: var(--menu-item-background-color);
+    padding: rem(10px);
+    white-space: nowrap;
+    width: 100%;
+
+    &:first-child {
+        border-top-left-radius: rem(3px);
+        border-top-right-radius: rem(3px);
+    }
+
+    &:last-child {
+        border-bottom-left-radius: rem(3px);
+        border-bottom-right-radius: rem(3px);
+    }
+
+    &:hover {
+        background-color: var(--menu-item-hover-background-color);
+    }
+}

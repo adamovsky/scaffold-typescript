@@ -1,0 +1,14 @@
+@use 'styles/colors' as *;
+@use 'styles/theme' as *;
+@use 'styles/functions/rem' as *;
+
+.textInput {
+    position: relative;
+    border: rem(1px) solid $textInputBorder;
+    border-radius: $borderRadius;
+}
+
+.viewOnly {
+    border: none;
+    padding: 0;
+}

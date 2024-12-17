@@ -1,0 +1,19 @@
+@use 'styles/colors' as *;
+@use 'styles/functions/rem' as *;
+@use 'styles/theme' as *;
+@use 'styles/mixins/breakpoints' as *;
+@use 'styles/mixins/shadows' as *;
+
+.contentPanel {
+    @include hoveringShadow;
+
+    background-color: var(--content-panel-background-color);
+    border-radius: var(--content-panel-border-radius);
+    width: 100%;
+}
+
+@include mobileOnly {
+    .contentPanel {
+        padding: rem(10px);
+    }
+}

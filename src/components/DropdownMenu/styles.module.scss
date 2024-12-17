@@ -1,0 +1,19 @@
+@use 'styles/colors.scss' as *;
+@use 'styles/functions/rem' as *;
+
+.contentPanel {
+    max-height: rem(400px);
+    overflow: auto;
+    padding: 5px 0;
+}
+
+.dropdownMenu {
+    max-height: 75vh;
+    position: absolute;
+    top: 75%;
+    z-index: 2;
+}
+
+.dropdownItems {
+    text-align: left;
+}

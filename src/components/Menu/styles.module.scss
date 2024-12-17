@@ -1,0 +1,13 @@
+@use 'styles/colors.scss' as *;
+@use 'styles/functions/rem' as *;
+@use 'styles/mixins/fonts.scss' as *;
+
+.menu {
+    @include normalFont;
+
+    border: rem(1px) solid var(--menu-border-color);
+    border-radius: rem(8px);
+    display: flex;
+    flex-direction: column;
+    padding: rem(1px);
+}
