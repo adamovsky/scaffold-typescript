@@ -1,0 +1,23 @@
+@use 'styles/colors' as *;
+@use 'styles/functions/rem' as *;
+@use 'styles/mixins/shadows' as *;
+
+.modal {
+    @include hoveringShadow;
+
+    background-color: var(--modal-background-color);
+    border-radius: rem(5px);
+    display: grid;
+    gap: rem(15px);
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content 1fr;
+    padding: rem(20px);
+    place-items: center center;
+    width: 100%;
+
+    .closeButton {
+        height: rem(10px);
+        justify-self: flex-end;
+        width: rem(10px);
+    }
+}
