@@ -1,0 +1,9 @@
+@use 'styles/colors' as *;
+
+.overlay {
+    background-color: var(--overlay-background-color);
+    height: 100%;
+    justify-content: center;
+    position: fixed;
+    z-index: 1;
+}
